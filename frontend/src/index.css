@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply font-sans;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Headings styling for better hierarchy */
+h1 {
+  @apply text-4xl sm:text-5xl font-extrabold tracking-tight;
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl font-bold;
+}
+
+h3 {
+  @apply text-2xl font-semibold;
+}
+
+/* Card component styling */
+.card {
+  @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm p-6;
+}
+
+/* Button styles */
+.btn {
+  @apply px-5 py-2.5 rounded-lg font-medium focus:outline-none transition-colors duration-150;
+}
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-white;
+}
+.btn-secondary {
+  @apply bg-secondary hover:bg-secondary-dark text-white;
+}
+.btn-success {
+  @apply bg-success hover:bg-success-dark text-white;
+}
+.btn-warning {
+  @apply bg-warning hover:bg-warning-dark text-white;
+}
+.btn-danger {
+  @apply bg-danger hover:bg-danger-dark text-white;
+}
+
+/* Form control styles */
+.form-input {
+  @apply border border-gray-300 dark:border-gray-700 rounded-md p-2 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:outline-none;
+}
